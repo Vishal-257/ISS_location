@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if(locals.activity){ %>
+        <h2>Name: <%= activity.name %></h2>
+        <h3>Latitude: <%= activity.latitude %></h3>
+        <h3>Longitute: <%=  activity.longitude %></h3>
+        <h3>Velocity: <%=  activity.velocity %></h3>
+        <a href=<%=gmap%>>View on Google maps</a>
+        <% } %>
+    <form action="/" method="get">
+        <input type="submit" value="Get ISS current Location">        
+    </form>
+</body>
+</html>
